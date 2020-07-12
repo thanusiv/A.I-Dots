@@ -60,7 +60,7 @@ class Dot():
 
     def collision_check(self):
         collision_with_goal = self.get_distance_to_goal() < float(self.goal_radius + self.radius)
-        collision_with_obstacle 
+        #collision_with_obstacle 
 
         if self.position[0] - 4 <= 0 or self.position[0] + 4 >= self.environment_width or \
             self.position[1] - 4 <= 0 or self.position[1] + 4 >= self.environment_height:

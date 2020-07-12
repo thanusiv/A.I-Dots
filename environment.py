@@ -20,7 +20,7 @@ class Environment():
         self.goal = Goal(self.goal_x, self.goal_y, self.goal_radius, self.game_display)
 
         self.population = Population(environment_width, environment_height, self.goal_x, self.goal_y, self.goal_radius, self.game_display)
-        self.obstacle = Obstacle(environment_width, environment_height, self.game_display, 200, 200, 500, 10)
+        # self.obstacle = Obstacle(environment_width, environment_height, self.game_display, 200, 200, 500, 10)
        
     def update(self):
         for event in pygame.event.get():
@@ -34,7 +34,7 @@ class Environment():
             self.population.mutate_offsprings()
         else:
             self.clear_screen()
-            self.obstacle.show()
+            # self.obstacle.show()
             self.goal.show()
             self.population.update()
             pygame.time.wait(20)
