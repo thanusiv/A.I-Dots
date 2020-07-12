@@ -11,7 +11,7 @@
 
 ## Overview
 
-Link's True Journey is a 2D open-world game created using Javascript for my Grade 11 Computer Science Summative. The objective is to explore the large map, upgrade your equipment, battle monsters, collect treasure chests and visit unique characters along the way!
+A.I Dots is a simulation where a population of dots have an objective to reach the blue goal and try to avoid any red obstacles that may be in the way. The dots evolve each generation through the use of the Genetic Algorithm. Try it out for yourself! **Note**: Cross-over was simply a clone of the parent's brain since the simulation is relatively simple. 
 
 ## Demo
 
@@ -24,16 +24,14 @@ Simply clone the Github repository to a local directory and open and run the `ma
 
 ## Features
 
-- Open-world (large map, just hold M and see for yourself!)
-- Ability to upgrade your equipment 
-- Battle powerful enemies
-- Find cool loot like treasure chests around the map
-- Visit some really bizarre characters that you might know of!
-- Nice music
+- See how dots whose movements are initially randome find their way around obstacles to reach the goal
+- Can add more obstacles to see how dots behave
+- Implemented the Genetic Algorithm from scratch (fitness calculation, natural selection, cross-over, mutation)
+- Use of OOP in Python can be used as template for future projects
 
 ## Technologies Used
 
-- [NotePad++](https://notepad-plus-plus.org/downloads/) - IDE used to build the game
+- [Visual Studio Code](https://notepad-plus-plus.org/downloads/) - IDE used to build the game
 - [Javascript](https://www.javascript.com/) - Programming language used
 - [Tiled](https://www.mapeditor.org/) - Map/level editor 
 
