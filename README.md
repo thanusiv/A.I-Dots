@@ -20,7 +20,7 @@ Link's True Journey is a 2D open-world game created using Javascript for my Grad
 
 ## How to Load Project
 
-Simply clone the Github repository to a local directory and open the `Game.html` file using a web browser like Google Chrome.
+Simply clone the Github repository to a local directory and open and run the `main.py` file using an IDE or from the terminal.
 
 ## Features
 
