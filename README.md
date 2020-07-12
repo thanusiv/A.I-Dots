@@ -31,9 +31,9 @@ Simply clone the Github repository to a local directory and open and run the `ma
 
 ## Technologies Used
 
-- [Visual Studio Code](https://notepad-plus-plus.org/downloads/) - IDE used to build the game
-- [Javascript](https://www.javascript.com/) - Programming language used
-- [Tiled](https://www.mapeditor.org/) - Map/level editor 
+- [Visual Studio Code](https://code.visualstudio.com/) - IDE used to build the game
+- [Python 3.8.3](https://www.python.org/downloads/) - Programming language used
+- [Pygame](https://www.pygame.org/news) - Video game library 
 
 ## Acknowledgements
 
