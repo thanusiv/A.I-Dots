@@ -28,7 +28,7 @@ class Dot():
     
     def show(self):
         if (self.is_best):
-            pygame.draw.circle(self.game_display, self.green, self.position, 5)
+            pygame.draw.circle(self.game_display, self.green, self.position, self.radius)
         else:
             pygame.draw.circle(self.game_display, self.black, self.position, self.radius)
     
@@ -59,21 +59,18 @@ class Dot():
             self.velocity[1] = 4
 
     def collision_check(self):
-        collision_with_goal = self.get_distance_to_goal() < float(self.goal_radius + self.radius)
-        #collision_with_obstacle 
+        collision_with_goal = self.get_distance(self.position[0], self.position[1], self.goal_x, self.goal_y) < float(self.goal_radius + self.radius)
+        collision_with_obstacle = self.get_distance(self.position[0], self.position[1], self.environment_width // 2, self.environment_height // 2) < float(60 + self.radius)
 
         if self.position[0] - 4 <= 0 or self.position[0] + 4 >= self.environment_width or \
-            self.position[1] - 4 <= 0 or self.position[1] + 4 >= self.environment_height:
+            self.position[1] - 4 <= 0 or self.position[1] + 4 >= self.environment_height or collision_with_obstacle:
             self.dead = True
         elif collision_with_goal:
             self.reach_goal = True
             self.dead = True
     
-    def get_distance_to_goal(self):
-        return sqrt((self.position[0] - self.goal_x) ** 2 + (self.position[1] - self.goal_y) ** 2)
-
-    #def collision_with_obstacle(self):
-    #    if self.position[0] - 4 >= 
+    def get_distance(self, x1, y1, x2, y2):
+        return sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
     
     def update(self):
         if not self.dead:
@@ -85,7 +82,7 @@ class Dot():
         if (self.reach_goal):
             fitness = 1.0/16.0 + 10000.0/(self.brain.step * self.brain.step)
         else:
-            distance_to_goal = self.get_distance_to_goal()
+            distance_to_goal = self.get_distance(self.position[0], self.position[1], self.goal_x, self.goal_y)
             fitness = 1.0/(distance_to_goal * distance_to_goal)
         return fitness
 
