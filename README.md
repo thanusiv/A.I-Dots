@@ -15,8 +15,8 @@ Link's True Journey is a 2D open-world game created using Javascript for my Grad
 
 ## Demo
 
-<img src="gifs/gif_1.gif?raw=true"/> <img src="gifs/gif_2.gif?raw=true"/> <img src="gifs/gif_3.gif?raw=true"/>
-<img src="gifs/gif_5.gif?raw=true"/> <img src="gifs/gif_6.gif?raw=true"/>
+<img src="gifs/without_obstacle.gif?raw=true"/> <img src="gifs/initial.gif?raw=true"/> <img src="gifs/several_generations.gif?raw=true"/>
+<img src="gifs/2_obstacles.gif?raw=true"/>
 
 ## How to Load Project
 
