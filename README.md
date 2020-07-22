@@ -24,7 +24,7 @@ Simply clone the Github repository to a local directory and open and run the `ma
 
 ## Features
 
-- See how dots whose movements are initially randome find their way around obstacles to reach the goal
+- See how dots' movements evolve as they find their way around obstacles to reach the goal
 - Can add more obstacles to see how dots behave
 - Implemented the Genetic Algorithm from scratch (fitness calculation, natural selection, cross-over, mutation)
 - Use of OOP in Python can be used as template for future projects
