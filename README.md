@@ -37,4 +37,4 @@ Simply clone the Github repository to a local directory and open and run the `ma
 
 ## Acknowledgements
 
-- Thanks to [Code Bullet](https://www.youtube.com/watch?v=BOZfhUcNiqk) for providing this idea!
+- Thanks to [Code Bullet](https://www.youtube.com/watch?v=BOZfhUcNiqk) for providing this idea and teaching me how to go about this!
