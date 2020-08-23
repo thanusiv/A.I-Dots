@@ -20,7 +20,7 @@ A.I Dots is a simulation where a population of dots have an objective to reach t
 
 ## How to Load Project
 
-Simply clone the Github repository to a local directory and open and run the `main.py` file using an IDE or from the terminal.
+Clone the Github repository to a local directory. Create a virtual environment if wanted and use `pip install -r requirements.txt` to install all the required dependencies. Open and run the `main.py` file using an IDE or from the terminal.
 
 ## Features
 
