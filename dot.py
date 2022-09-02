@@ -59,8 +59,10 @@ class Dot():
             self.velocity[1] = 4
 
     def collision_check(self):
-        collision_with_goal = self.get_distance(self.position[0], self.position[1], self.goal_x, self.goal_y) < float(self.goal_radius + self.radius)
-        collision_with_obstacle = self.get_distance(self.position[0], self.position[1], self.environment_width // 2, self.environment_height // 2) < float(60 + self.radius)
+        collision_with_goal = self.get_distance(self.position[0], self.position[1], self.goal_x, self.goal_y) \
+                                                < float(self.goal_radius + self.radius)
+        collision_with_obstacle = self.get_distance(self.position[0], self.position[1], self.environment_width // 2, self.environment_height // 2) \
+                                                < float(60 + self.radius)
 
         if self.position[0] - 4 <= 0 or self.position[0] + 4 >= self.environment_width or \
             self.position[1] - 4 <= 0 or self.position[1] + 4 >= self.environment_height or collision_with_obstacle:
@@ -68,7 +70,7 @@ class Dot():
         elif collision_with_goal:
             self.reach_goal = True
             self.dead = True
-    
+
     def get_distance(self, x1, y1, x2, y2):
         return sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
     
